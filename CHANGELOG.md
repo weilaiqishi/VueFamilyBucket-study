@@ -1,3 +1,7 @@
+## [0.1.2](https://github.com/weilaiqishi/VueFamilyBucket-study/compare/v0.1.1...v0.1.2) (2020-07-06)
+
+
+
 # 0.1.0 (2020-07-06)
 
 
