@@ -1,3 +1,4 @@
+develop
 需求：学习vue，组价化展示知识点
 ci和规范化实践
 
@@ -24,4 +25,3 @@ flow.xmind加入gitflow图
 建好develop分支并提交
 加入commit msg规范工具commit
 github action，创建workflows目录和.yml文件
-develop
