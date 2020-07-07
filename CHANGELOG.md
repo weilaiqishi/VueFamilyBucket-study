@@ -1,3 +1,18 @@
+## 0.1.3 (2020-07-07)
+
+
+### Bug Fixes
+
+* **eslint:** eslint "linebreak-style": [0 ,"error", "windows"] ([25675bb](https://github.com/weilaiqishi/VueFamilyBucket-study/commit/25675bbd68dd9d97dff03875a02f5c6b59da2731))
+
+
+### Features
+
+* **git commit:** use commitizen to standard git commit message ([1b852b9](https://github.com/weilaiqishi/VueFamilyBucket-study/commit/1b852b92645bba397c7459d18d7959a6007203b2))
+* **version and changelog:** use conventional-changelog-cli to make CHANGELOG ([efec2cd](https://github.com/weilaiqishi/VueFamilyBucket-study/commit/efec2cd9c5a0a0f7a85986f1bbb0e995252c14be))
+
+
+
 ## 0.1.2 (2020-07-07)
 
 
