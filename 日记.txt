@@ -1,0 +1,27 @@
+需求：学习vue，组价化展示知识点
+ci和规范化实践
+
+2020/6/16
+在githuh网站上手动创建项目
+用sourcetree手动拉项目
+vue-cli建项目
+babel
+router hash模式
+csspre-processors dart-scss
+linter eslint+airbub
+unittest jest
+
+to搭路由菜单
+
+2020/6/19
+把vue-element-admin的style复制到本项目中，复用sass代码
+
+2020/7/1
+新建md/Angular commit.md
+flow.xmind加入gitflow图
+
+2020/7/6
+建好develop分支并提交
+加入commit msg规范工具commit
+github action，创建workflows目录和.yml文件
+拉release分支
