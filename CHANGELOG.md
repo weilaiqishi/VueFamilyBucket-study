@@ -1,3 +1,12 @@
+## [0.1.4](https://github.com/weilaiqishi/VueFamilyBucket-study/compare/v0.1.3...v0.1.4) (2020-07-16)
+
+
+### Features
+
+* **menu:** menu components from d2 ([762ea40](https://github.com/weilaiqishi/VueFamilyBucket-study/commit/762ea4073da1ffd9b2d64f18f1ce8e25e03c5fe2))
+
+
+
 ## 0.1.3 (2020-07-07)
 
 
