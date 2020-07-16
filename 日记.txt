@@ -25,3 +25,9 @@ flow.xmind加入gitflow图
 建好develop分支并提交
 加入commit msg规范工具commit
 github action，创建workflows目录和.yml文件
+
+2020/7/12
+安装element 使用它的顶部菜单
+
+2020/7/14
+参照d2的菜单数据格式做菜单组件
