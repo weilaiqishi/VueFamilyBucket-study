@@ -16,7 +16,8 @@ module.exports = {
     "linebreak-style": [0 ,"error", "windows"],
     'space-before-function-paren': ["warn", "always"],
     'comma-dangle': 'off',
-    'max-len': 'off'
+    'max-len': 'off',
+    'global-require': 0
   },
   overrides: [
     {

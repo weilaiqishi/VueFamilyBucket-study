@@ -30,9 +30,7 @@ export default {
     }, this.menuData.map((menu) => (menu.children === undefined ? elMenuItem : elSubmenu).call(this, h, menu)));
   },
   props: {
-    menuData: {
-
-    },
+    menuData: {},
     active: {},
     handleMenuSelect: {}
   }

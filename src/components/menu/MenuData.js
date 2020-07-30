@@ -5,39 +5,20 @@ export default [
     icon: 'el-icon-eleme'
   },
   {
-    path: '/about',
-    title: '示例',
+    path: '/test',
+    title: 'TEST',
+    icon: 'el-icon-eleme'
+  },
+  {
+    path: '/zujian',
+    title: 'ZUJIAN',
     icon: 'el-icon-eleme',
     children: [
       {
-        path: '/menu',
-        title: '菜单',
+        path: '/imageViewer',
+        title: 'IMAGEVIERER',
         icon: 'el-icon-eleme',
-        children: [
-          {
-            path: '/menu1',
-            title: '菜单',
-            icon: 'el-icon-eleme',
-            children: [
-              {
-                path: '/menu3',
-                title: '菜单',
-                icon: 'el-icon-eleme'
-              },
-              {
-                path: '/menu4',
-                title: '菜单',
-                icon: 'el-icon-eleme'
-              }
-            ]
-          },
-          {
-            path: '/menu2',
-            title: '菜单',
-            icon: 'el-icon-eleme'
-          }
-        ]
       }
     ]
-  }
+  },
 ];

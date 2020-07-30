@@ -31,3 +31,6 @@ github action，创建workflows目录和.yml文件
 
 2020/7/14
 参照d2的菜单数据格式做菜单组件
+
+2020/7/18
+el-image中剥离的大图预览组件

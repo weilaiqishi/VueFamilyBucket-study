@@ -14,7 +14,7 @@ export default {
       menu: {
         menuOption: {
           select: (key, keyPath) => {
-            console.log(key, keyPath);
+            this.$router.push(keyPath.join(''));
           },
           active: '1'
         },
