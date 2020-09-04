@@ -102,8 +102,9 @@ Body部分的格式是固定的，必须写成This reverts commit &lt;hash>.，�
 
 git add .
 git cz
-git push
 npm version patch
-git tag v1.0
+conventional-changelog -p angular -i CHANGELOG.md -s -r 0
 git push
+git add .
+git cz
 finish feature
