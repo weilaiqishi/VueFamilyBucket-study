@@ -1,3 +1,13 @@
+## [0.1.5](https://github.com/weilaiqishi/VueFamilyBucket-study/compare/v0.1.4...v0.1.5) (2020-09-04)
+
+
+### Features
+
+* **component:** image bigger show component ([69c71a5](https://github.com/weilaiqishi/VueFamilyBucket-study/commit/69c71a539e518675a5c69ee71f6cda6f935e1570))
+* virtual list ([b123920](https://github.com/weilaiqishi/VueFamilyBucket-study/commit/b12392042fb796f121ca84ea64ebf9e8429902ee))
+
+
+
 ## [0.1.4](https://github.com/weilaiqishi/VueFamilyBucket-study/compare/v0.1.3...v0.1.4) (2020-07-16)
 
 
