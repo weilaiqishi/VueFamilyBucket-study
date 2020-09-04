@@ -6,7 +6,7 @@
 </template>
 <script>
 // 导入组件
-import ElImageViewer from 'element-ui/packages/image/src/image-viewer.vue';
+import ElImageViewer from 'element-ui/packages/image/src/image-viewer.vue'
 
 export default {
   name: 'Index',
@@ -15,16 +15,16 @@ export default {
     return {
       showViewer: false, // 显示查看器
       url: 'https://cube.elemecdn.com/6/94/4d3ea53c084bad6931a56d5158a48jpeg.jpeg'
-    };
+    }
   },
   methods: {
     onPreview () {
-      this.showViewer = true;
+      this.showViewer = true
     },
     // 关闭查看器
     closeViewer () {
-      this.showViewer = false;
+      this.showViewer = false
     }
   }
-};
+}
 </script>

@@ -2,8 +2,8 @@
   <BaseMenu :active="'1'" :handleMenuSelect="menu.menuOption.select" :menuData="menu.menuData"></BaseMenu>
 </template>
 <script>
-import BaseMenu from './BaseMenu.vue';
-import menuData from './MenuData';
+import BaseMenu from './BaseMenu.vue'
+import menuData from './MenuData'
 
 export default {
   components: {
@@ -14,13 +14,14 @@ export default {
       menu: {
         menuOption: {
           select: (key, keyPath) => {
-            this.$router.push(keyPath.join(''));
+            const path = keyPath.join('')
+            this.$router.currentRoute.fullPath !== path && this.$router.push(path)
           },
           active: '1'
         },
         menuData
       }
-    };
+    }
   }
-};
+}
 </script>

@@ -1,17 +1,13 @@
-import Vue from 'vue';
-import VueRouter from 'vue-router';
+import Vue from 'vue'
+import VueRouter from 'vue-router'
 
-Vue.use(VueRouter);
+Vue.use(VueRouter)
 
 const routes = [
-  // {
-  //   path: '/about',
-  //   name: 'About',
-  //   // route level code-splitting
-  //   // this generates a separate chunk (about.[hash].js) for this route
-  //   // which is lazy-loaded when the route is visited.
-  //   component: () => import(/* webpackChunkName: "about" */ '../views/About.vue'),
-  // },
+  {
+    path: '/',
+    name: 'index'
+  },
   {
     path: '/test',
     name: 'Test',
@@ -26,13 +22,19 @@ const routes = [
         path: 'imageViewer',
         name: 'ImageViewer',
         component: (r) => require.ensure([], () => r(require('../views/zujian/ImageViewer.vue')), 'imageviewer')
+      },
+      {
+        path: 'virtualList',
+        name: 'VirtualList',
+        component: (r) => require.ensure([], () => r(require('../views/zujian/VirtualList.vue')), 'virtuallist')
       }
     ]
   }
-];
+]
 
 const router = new VueRouter({
   routes,
-});
+})
 
-export default router;
+export default router
+export { routes }
