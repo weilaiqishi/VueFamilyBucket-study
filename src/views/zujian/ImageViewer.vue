@@ -5,11 +5,11 @@
 </template>
 
 <script>
-import imageViewer from '@/components/image/BaseImageViewer.vue';
+import imageViewer from '@/components/image/BaseImageViewer.vue'
 
 export default {
   components: {
     imageViewer
   }
-};
+}
 </script>
