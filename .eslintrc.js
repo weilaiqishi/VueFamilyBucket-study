@@ -24,7 +24,9 @@ module.exports = {
     'no-param-reassign': 0,
     'semi': ["warn", "never"],
     'no-underscore-dangle': 0,
-    'operator-assignment': 0
+    'operator-assignment': 0,
+    'indent': ['warn', 4],
+    'no-restricted-globals': 0
   },
   overrides: [
     {
