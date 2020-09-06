@@ -1,3 +1,12 @@
+## [0.1.6](https://github.com/weilaiqishi/VueFamilyBucket-study/compare/v0.1.5...v0.1.6) (2020-09-06)
+
+
+### Features
+
+* virtualtable ([dca3eb2](https://github.com/weilaiqishi/VueFamilyBucket-study/commit/dca3eb24584c2e2de889457015c10de672137b92))
+
+
+
 ## [0.1.5](https://github.com/weilaiqishi/VueFamilyBucket-study/compare/v0.1.4...v0.1.5) (2020-09-04)
 
 
