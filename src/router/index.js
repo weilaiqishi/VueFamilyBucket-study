@@ -27,6 +27,11 @@ const routes = [
         path: 'virtualList',
         name: 'VirtualList',
         component: (r) => require.ensure([], () => r(require('../views/zujian/VirtualList.vue')), 'virtuallist')
+      },
+      {
+        path: 'virtualTable',
+        name: 'VirtualTable',
+        component: (r) => require.ensure([], () => r(require('../views/zujian/VirtualTable.vue')), 'virtualTable')
       }
     ]
   }
