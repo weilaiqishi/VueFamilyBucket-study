@@ -1,0 +1,11 @@
+{
+    "plugins": [
+        [
+            "component",
+            {
+                "libraryName": "umy-ui",
+                "styleLibraryName": "theme-chalk"
+            }
+        ]
+    ]
+}
