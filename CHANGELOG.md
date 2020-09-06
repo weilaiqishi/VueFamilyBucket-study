@@ -1,3 +1,12 @@
+## [0.1.7](https://github.com/weilaiqishi/VueFamilyBucket-study/compare/v0.1.6...v0.1.7) (2020-09-06)
+
+
+### Features
+
+* axios ([c868569](https://github.com/weilaiqishi/VueFamilyBucket-study/commit/c868569f929c3fe4d6859ce5b075f27c2878ab98))
+
+
+
 ## [0.1.6](https://github.com/weilaiqishi/VueFamilyBucket-study/compare/v0.1.5...v0.1.6) (2020-09-06)
 
 
