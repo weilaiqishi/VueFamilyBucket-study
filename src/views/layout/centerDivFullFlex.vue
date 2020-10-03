@@ -26,7 +26,7 @@ export default {}
         background: #dfd3c3;
     }
     .header, .footer {
-        height: 10%;
+        height: 100px;
         background: #596e79;
     }
 </style>
