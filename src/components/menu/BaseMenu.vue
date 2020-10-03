@@ -23,7 +23,6 @@ function elSubmenu (h, menu) {
 
 export default {
     render (h) {
-        console.log('>>> render', Object.entries(this), this._self, this.target)
         return h('el-menu', {
             props: { mode: 'horizontal', defaultActive: this.active },
             on: { select: this.handleMenuSelect }

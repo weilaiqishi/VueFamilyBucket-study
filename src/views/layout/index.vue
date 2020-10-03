@@ -1,6 +1,6 @@
 <template>
     <div class="div">
-        <h1>ZUJIAN</h1>
+        <h1>LAYOUT</h1>
         <h1>{{ $router.currentRoute.path.split("/").pop() }}</h1>
         <div class="view">
             <router-view />
