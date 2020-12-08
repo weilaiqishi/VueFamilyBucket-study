@@ -3,7 +3,10 @@
 
 name: Node.js CI
 
-on: [push]
+on:
+  push:
+    branches:
+      - master
 
 jobs:
   build:
@@ -19,6 +22,16 @@ jobs:
     - run: npm i 
     - run: npm run build
     - run: npm test
+    # 删除旧版本
+    - name: ls -a via ssh
+      uses: fifsky/ssh-action@master
+      with:
+        command: |
+          cd /var/www/app/vuefamilybucketstudy
+          rm -rf dist
+        host: ${{ secrets.HOST }}
+        user: root
+        key: ${{ secrets.TOKEN }}
     # 部署到云服务器
     - name: Deploy to Server
       uses: wlixcc/SFTP-Deploy-Action@v1.0
@@ -26,10 +39,10 @@ jobs:
         # 用户名
         username: 'root'
         # 服务器地址
-        server: "47.100.116.130"
+        server: ${{ secrets.HOST }}
         # 本地.ssh文件下的私钥id_rsa，存在secrets的TOKEN中
         ssh_private_key: ${{ secrets.TOKEN }} 
         # 源目录，相对于$GITHUB_WORKSPACE根目录的路径
         local_path: "dist/" 
         # 目标目录
-        remote_path: "/var/www/app"
+        remote_path: "/var/www/app/vuefamilybucketstudy"
