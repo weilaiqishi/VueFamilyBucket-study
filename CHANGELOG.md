@@ -1,3 +1,20 @@
+# [0.2.0](https://github.com/weilaiqishi/VueFamilyBucket-study/compare/v0.1.7...v0.2.0) (2020-12-08)
+
+
+### Bug Fixes
+
+* layout centerfull ([ecdf666](https://github.com/weilaiqishi/VueFamilyBucket-study/commit/ecdf666d5ba4a59dc53d138d1f8678011dba605f))
+
+
+### Features
+
+* layout fullheight ([3aa6368](https://github.com/weilaiqishi/VueFamilyBucket-study/commit/3aa6368a4b9810272f801154b66ac5ac7c3c4820))
+* tag ([722c860](https://github.com/weilaiqishi/VueFamilyBucket-study/commit/722c860ee42e40c22bfd3492acf8f76d6eee8154))
+* test router ([d2a54eb](https://github.com/weilaiqishi/VueFamilyBucket-study/commit/d2a54ebb9d4265bb3d3ae58c175a9bbc0bda111b))
+* **d2form component, can use js to describe el-form template:** d2form component,copy from d2-crud ([c9c3b3e](https://github.com/weilaiqishi/VueFamilyBucket-study/commit/c9c3b3e540cfdd061c35525032b28fe2b32196a7))
+
+
+
 ## [0.1.7](https://github.com/weilaiqishi/VueFamilyBucket-study/compare/v0.1.6...v0.1.7) (2020-09-06)
 
 
