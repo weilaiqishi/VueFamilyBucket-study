@@ -25,7 +25,15 @@ flow.xmind加入gitflow图
 建好develop分支并提交
 加入commit msg规范工具commit
 github action，创建workflows目录和.yml文件
-<<<<<<< HEAD
-=======
 
->>>>>>> release/github_action
+2020/7/12
+安装element 使用它的顶部菜单
+
+2020/7/14
+参照d2的菜单数据格式做菜单组件
+
+2020/7/18
+el-image中剥离的大图预览组件
+
+2020/9/6
+虚拟列表虚拟表格 axios(vue-element-admin)
