@@ -30,6 +30,7 @@ jobs:
         host: ${{ secrets.HOST }}
         user: root
         key: ${{ secrets.TOKEN }}
+        args: "-tt"
     # 部署到云服务器
     - name: Deploy to Server
       uses: wlixcc/SFTP-Deploy-Action@v1.0
