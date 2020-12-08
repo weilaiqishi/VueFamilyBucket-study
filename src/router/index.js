@@ -54,6 +54,11 @@ const routes = [
                 path: 'virtualTable',
                 name: 'VirtualTable',
                 component: (r) => require.ensure([], () => r(require('../views/zujian/VirtualTable.vue')), 'virtualtable')
+            },
+            {
+                path: 'd2Form',
+                name: 'd2Form',
+                component: (r) => require.ensure([], () => r(require('../views/zujian/D2Form.vue')), 'd2Form')
             }
         ]
     }
