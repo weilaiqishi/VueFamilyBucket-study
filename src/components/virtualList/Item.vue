@@ -1,36 +1,26 @@
 <template>
-  <p>
-    <span style="color:red">{{item.id}}</span>
-    {{item.value}}
-  </p>
+    <p>
+        <span style="color:red">{{ item.id }}</span>
+        {{ item.value }}
+    </p>
 </template>
 
 <script>
-
 export default {
-  props: {
-    item: {
-      type: Object,
-      default: () => { }
-    }
-  },
+    props: {
+        item: {
+            type: Object,
+            default: () => {}
+        }
+    },
 
-  mounted () {
-
-  },
-  updated () {
-
-  },
-  data () {
-    return {
-
-    }
-  },
-  methods: {
-
-  }
+    mounted () {},
+    updated () {},
+    data () {
+        return {}
+    },
+    methods: {}
 }
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>

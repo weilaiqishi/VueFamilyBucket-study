@@ -5,5 +5,6 @@ module.exports = {
             warnings: true,
             errors: false
         }
-    }
+    },
+    runtimeCompiler: true
 }

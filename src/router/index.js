@@ -61,7 +61,29 @@ const routes = [
                 component: (r) => require.ensure([], () => r(require('../views/zujian/D2Form.vue')), 'd2Form')
             }
         ]
-    }
+    },
+    {
+        path: '/iview',
+        name: 'Iview',
+        component: () => import(/* webpackChunkName: "iview" */ '../views/iview/index.vue'),
+        children: [
+            {
+                path: 'iform',
+                name: 'form',
+                component: (r) => require.ensure([], () => r(require('../views/iview/iform.vue')), 'iform')
+            },
+            {
+                path: 'idisplay',
+                name: 'display',
+                component: (r) => require.ensure([], () => r(require('../views/iview/idisplay.vue')), 'idisplay')
+            },
+            {
+                path: 'ialert',
+                name: 'alert',
+                component: (r) => require.ensure([], () => r(require('../views/iview/ialert.vue')), 'ialert')
+            },
+        ]
+    },
 ]
 
 const router = new VueRouter({
