@@ -82,6 +82,21 @@ const routes = [
                 name: 'alert',
                 component: (r) => require.ensure([], () => r(require('../views/iview/ialert.vue')), 'ialert')
             },
+            {
+                path: 'itable-render',
+                name: 'table-render',
+                component: (r) => require.ensure([], () => r(require('../views/iview/itable-render.vue')), 'itable-render')
+            },
+            {
+                path: 'itable-slot',
+                name: 'table-slot',
+                component: (r) => require.ensure([], () => r(require('../views/iview/itable-slot.vue')), 'itable-slot')
+            },
+            {
+                path: 'itable-slot1',
+                name: 'table-slot1',
+                component: (r) => require.ensure([], () => r(require('../views/iview/itable-slot1.vue')), 'itable-slot1')
+            },
         ]
     },
 ]

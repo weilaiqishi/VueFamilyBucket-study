@@ -2,7 +2,7 @@
 import Vue from 'vue'
 import Alert from './alert.vue'
 
-Alert.Notification = (properties) => {
+Alert.newInstance = (properties) => {
     const props = properties || {}
     const Instance = new Vue({
         data: props,
