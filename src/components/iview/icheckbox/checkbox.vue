@@ -23,12 +23,12 @@
 
 <script>
 import Emitter from '../mixins/emitter.js'
-import findComponent from '../utils/assist.js'
+import { findComponentUpward } from '../utils/assist.js'
 
 export default {
     name: 'iCheckbox',
     props: {
-        disable: {
+        disabled: {
             type: Boolean,
             default: false
         },
@@ -40,7 +40,7 @@ export default {
             type: [String, Number, Boolean],
             default: true
         },
-        falseValues: {
+        falseValue: {
             type: [String, Number, Boolean],
             default: false
         },
@@ -68,13 +68,13 @@ export default {
     mixins: [Emitter],
     methods: {
         change (event) {
-            if (this.disable) {
+            if (this.disabled) {
                 return false
             }
-            const checked = event.target.cheked
+            const checked = event.target.checked
             this.currentValue = checked
 
-            const value = checked ? this.trueValue : this.falseValues
+            const value = checked ? this.trueValue : this.falseValue
             this.$emit('input', value)
 
             if (this.group) {
@@ -89,7 +89,7 @@ export default {
         }
     },
     mounted () {
-        this.parent = findComponent.findComponentUpward(this, 'iCheckboxGroup')
+        this.parent = findComponentUpward(this, 'iCheckboxGroup')
 
         if (this.parent) {
             this.group = true

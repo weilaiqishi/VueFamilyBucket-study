@@ -63,10 +63,61 @@ function findBrothersComponents (context, componentName, exceptMe = true) {
     return res
 }
 
+function deepCopy (target) {
+    if (typeof target !== 'object' || target === null) { return target }
+    const map = new WeakMap()
+    const root = {
+        result: null,
+        target,
+    }
+    const loopList = [root]
+    root.result = Array.isArray(root.target) ? [] : {}
+    map.set(root.target, {
+        data: root.result,
+        time: 1
+    })
+    // 循环数组
+    while (loopList.length) {
+        const node = loopList.pop()
+        Reflect.ownKeys(node.target).forEach((key) => {
+            const value = node.target[key]
+            if (typeof value !== 'object' || value === null) {
+                node.result[key] = value
+            } else {
+                let cache = map.get(value)
+                if (cache) {
+                    cache.time++
+                    node.result[key] = cache.data
+                } else {
+                    cache = {
+                        data: node.result[key],
+                        time: 1,
+                    }
+                    node.result[key] = Array.isArray(value) ? [] : {}
+                    loopList.push({
+                        result: node.result[key],
+                        target: value,
+                    })
+                }
+                map.set(value, cache)
+            }
+        })
+    }
+    return root.result
+}
+
 export default {
     findComponentUpward,
     findComponentsUpward,
     findComponentDownward,
     findComponentsDownward,
-    findBrothersComponents
+    findBrothersComponents,
+    deepCopy
 }
+
+export { findComponentUpward }
+export { findComponentsUpward }
+export { findComponentDownward }
+export { findComponentsDownward }
+export { findBrothersComponents }
+export { deepCopy }

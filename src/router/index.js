@@ -97,6 +97,11 @@ const routes = [
                 name: 'table-slot1',
                 component: (r) => require.ensure([], () => r(require('../views/iview/itable-slot1.vue')), 'itable-slot1')
             },
+            {
+                path: 'itree',
+                name: 'tree',
+                component: (r) => require.ensure([], () => r(require('../views/iview/itree.vue')), 'itree')
+            },
         ]
     },
 ]

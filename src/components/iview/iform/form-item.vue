@@ -94,7 +94,6 @@ export default {
         resetField () {
             this.validateState = ''
             this.validateMessage = ''
-            console.log(this.form.model, this.prop)
             this.form.model[this.prop] = this.initialValue
         },
         onFieldBlur () {
