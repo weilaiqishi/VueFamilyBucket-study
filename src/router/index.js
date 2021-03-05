@@ -61,7 +61,49 @@ const routes = [
                 component: (r) => require.ensure([], () => r(require('../views/zujian/D2Form.vue')), 'd2Form')
             }
         ]
-    }
+    },
+    {
+        path: '/iview',
+        name: 'Iview',
+        component: () => import(/* webpackChunkName: "iview" */ '../views/iview/index.vue'),
+        children: [
+            {
+                path: 'iform',
+                name: 'form',
+                component: (r) => require.ensure([], () => r(require('../views/iview/iform.vue')), 'iform')
+            },
+            {
+                path: 'idisplay',
+                name: 'display',
+                component: (r) => require.ensure([], () => r(require('../views/iview/idisplay.vue')), 'idisplay')
+            },
+            {
+                path: 'ialert',
+                name: 'alert',
+                component: (r) => require.ensure([], () => r(require('../views/iview/ialert.vue')), 'ialert')
+            },
+            {
+                path: 'itable-render',
+                name: 'table-render',
+                component: (r) => require.ensure([], () => r(require('../views/iview/itable-render.vue')), 'itable-render')
+            },
+            {
+                path: 'itable-slot',
+                name: 'table-slot',
+                component: (r) => require.ensure([], () => r(require('../views/iview/itable-slot.vue')), 'itable-slot')
+            },
+            {
+                path: 'itable-slot1',
+                name: 'table-slot1',
+                component: (r) => require.ensure([], () => r(require('../views/iview/itable-slot1.vue')), 'itable-slot1')
+            },
+            {
+                path: 'itree',
+                name: 'tree',
+                component: (r) => require.ensure([], () => r(require('../views/iview/itree.vue')), 'itree')
+            },
+        ]
+    },
 ]
 
 const router = new VueRouter({

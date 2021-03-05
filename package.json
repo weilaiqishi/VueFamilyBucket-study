@@ -1,15 +1,16 @@
 {
   "name": "vuefamilybucketstudy",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "vue-cli-service build --mode none",
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint",
     "version": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md"
   },
   "dependencies": {
+    "async-validator": "^3.5.1",
     "axios": "^0.20.0",
     "core-js": "^3.6.5",
     "element-ui": "^2.13.2",

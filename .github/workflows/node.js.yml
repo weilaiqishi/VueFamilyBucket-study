@@ -24,11 +24,9 @@ jobs:
     - run: npm test
     # 删除旧版本
     - name: ls -a via ssh
-      uses: fifsky/ssh-action@master
+      uses: fifsky/ssh-action@v0.0.4
       with:
-        command: |
-          cd /var/www/app/vuefamilybucketstudy
-          rm -rf dist
+        command: cd /var/www/app/vuefamilybucketstudy;rm -rf dist
         host: ${{ secrets.HOST }}
         user: root
         key: ${{ secrets.TOKEN }}

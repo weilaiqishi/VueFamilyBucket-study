@@ -26,7 +26,17 @@ module.exports = {
     'no-underscore-dangle': 0,
     'operator-assignment': 0,
     'indent': ['warn', 4],
-    'no-restricted-globals': 0
+    'no-restricted-globals': 0,
+    'prefer-spread': 'off',
+    'no-unused-vars': 'off',
+    'eol-last': 'warn',
+    'consistent-return': 'off',
+    'no-alert': 'off',
+    'no-restricted-syntax': 'off',
+    'prefer-destructuring': 'off',
+    'no-new-func': 'off',
+    'radix': 'off',
+    'vue/require-v-for-key': 0
   },
   overrides: [
     {
