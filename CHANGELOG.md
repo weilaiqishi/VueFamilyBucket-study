@@ -1,3 +1,13 @@
+# [0.4.0](https://github.com/weilaiqishi/VueFamilyBucket-study/compare/v0.3.0...v0.4.0) (2021-05-07)
+
+
+### Features
+
+* async-validator study ([9291944](https://github.com/weilaiqishi/VueFamilyBucket-study/commit/9291944e8bb7c027aa39670dce4773d7abd4b42d))
+* iview 15 ([5f3fd1a](https://github.com/weilaiqishi/VueFamilyBucket-study/commit/5f3fd1ab07e6fd676af3946b4e9461384f701411))
+
+
+
 # [0.3.0](https://github.com/weilaiqishi/VueFamilyBucket-study/compare/v0.2.0...v0.3.0) (2021-02-20)
 
 
