@@ -36,7 +36,8 @@ module.exports = {
     'prefer-destructuring': 'off',
     'no-new-func': 'off',
     'radix': 'off',
-    'vue/require-v-for-key': 0
+    'vue/require-v-for-key': 0,
+    'prefer-promise-reject-errors': 0
   },
   overrides: [
     {

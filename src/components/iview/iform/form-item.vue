@@ -28,14 +28,14 @@ export default {
         },
         prop: {
             type: String
-        },
+        }
     },
     data () {
         return {
             isRequired: false, // 是否为必填
             validateState: '', // 校验状态
             validateMessage: '', // 校验不通过时的提示信息
-            initialValue: null,
+            initialValue: null
         }
     },
     computed: {
@@ -52,8 +52,8 @@ export default {
                 this.isRequired = rules.some((rule) => rule.required)
             }
 
-            this.$on('on-form-blur', this.onFieldBlur)
-            this.$on('on-form-change', this.onFieldChange)
+            this.$on('on-form-blur', this.onFieldBlur.bind(this))
+            this.$on('on-form-change', this.onFieldChange.bind(this))
         },
         // 从Form的rules属性中，获取当前FormItem的校验规则
         getRules () {
@@ -64,14 +64,16 @@ export default {
         // 只支持blur和change,所以过滤出符合触发条件的rule规则
         getFilteredRule (trigger) {
             const rules = this.getRules()
-            return rules.filter((rule) => !rule.trigger || rule.trigger.includes(trigger))
+            return rules.filter(
+                (rule) => !rule.trigger || rule.trigger.includes(trigger)
+            )
         },
         /**
          * 校验数据
          * @param trigger 校验类型
          * @param callback 回调函数
          */
-        validate (trigger, callback = () => { }) {
+        validate (trigger, callback = () => {}) {
             const rules = this.getFilteredRule(trigger)
             if (!rules || rules.length === 0) {
                 return true
@@ -82,6 +84,7 @@ export default {
             const descriptor = {}
             descriptor[this.prop] = rules
             const validator = new AsyncValidator(descriptor)
+            console.log('AsyncValidator descriptor -> ', descriptor)
             const model = {}
             model[this.prop] = this.fieldValue
             validator.validate(model, { firstFields: true }, (errors) => {
@@ -120,11 +123,11 @@ export default {
 }
 </script>
 <style>
-    .i-form-item-label-required:before {
-        content: '*';
-        color: red;
-    }
-    .i-form-item-message {
-        color: red;
-    }
+.i-form-item-label-required:before {
+    content: '*';
+    color: red;
+}
+.i-form-item-message {
+    color: red;
+}
 </style>
